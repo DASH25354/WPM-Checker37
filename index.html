@@ -127,15 +127,16 @@
 
 <!-- テキスト -->
 <div id="text">
-【30】Japan has a serious problem with English. On the TOEFL iBT test of Reading, Listening, Speaking, and Writing, Japan ranks 29th out of 31 in Asia. In the 2017 EF English Proficiency Index, Japan is 37th out of 80 non‑English speaking countries and is in the “Low” group, below South Korea, China, and Vietnam.
-One main cause is the old Grammar Translation Method from the Meiji era. In this way, students read, learn rules, and translate English into Japanese, often with backward translation. The goal is correct Japanese, not real English use. So many people have school knowledge but cannot communicate.
-　Time is also a big issue. Students learn English for six years in middle and high school, with about 790 hours in class. This is far less than 2,200 hours, the time that English native speakers may need for Japanese for work use. The total text in six years is only 72–73 pages of a normal English book. This is too little, so progress is slow.
-　Sound training is almost ignored. English and Japanese have very different sounds, stress, and rhythm. With poor work on speaking and listening, students cannot speak clearly or understand well. Old style entrance exams keep this problem and block change.</div>
+【35】Kei Nishikori joined a tennis academy when he was a junior high school student, just like you. He was small, but he had a special talent. He could hit the ball very hard and was very smart in sports.
+　However, Kei did not like running training at first. He only enjoyed playing tennis on the court. But his coach explained that running makes legs strong. When Kei understood this, he changed his attitude. He started to run and train very hard to become faster. He made a great effort to become a strong player.
+　Kei is also special because of his mental strength. In a match, there are often difficult and nervous moments. Many players play safely or make mistakes in these times. However, Kei is different. He plays his best tennis during the most important points. When the game is close, he plays at a higher level.
+　Top players win because they get the important points. Kei became a world-class player because he worked hard on training he did not like, and he stayed strong in big matches.
+</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="30.mp3" type="audio/mpeg">
+    <source src="35.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -148,11 +149,13 @@ One main cause is the old Grammar Translation Method from the Meiji era. In this
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Japan’s English education is effective, and students gain strong speaking skills through many hours of pronunciation training.
+  <span class="question-option"><input type="checkbox" class="q1" value="a">Kei liked every kind of training from the beginning, especially running, because he knew it was important for tennis.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Japan’s low scores on TOEFL iBT and the 2017 EF EPI show serious problems in English education, including translation-focused teaching, too little study time, and weak work on pronunciation. </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> The main causes of Japan’s low English ability are the old Grammar Translation Method, only about 790 class hours over six years (far less than 2,200 hours), very small reading input (about 72–73 pages), and little focus on speaking and listening.  </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> Japan ranks at the top in Asia for English and proves that grammar translation and entrance exams are the best way to build communication skills.
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> When a match becomes difficult and nervous, Kei usually plays safely to avoid mistakes, just like many other players do.
+ </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> Although Kei did not enjoy running at first, he started to train hard after he understood it would make his legs strong.
+  </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Kei became a world-class player because he made great efforts in training and can play his best during important points in a match.
  </span>
 </div>
 
@@ -173,8 +176,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: b, c
-  const correctAnswers = ["b", "c"];
+  // 正解選択肢: c, d
+  const correctAnswers = ["c", "d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -199,6 +202,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
